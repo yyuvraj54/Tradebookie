@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#C37676"
+    tools:context=".Addrecords">
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:fontFamily="@font/alfa_slab_one"
+        android:text="Add Stocks "
+        android:textSize="40sp" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="25dp"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/symbolname"
+            android:maxLength="25"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/entry"
+            android:ems="10"
+            android:fontFamily="@font/alfa_slab_one"
+            android:hint="Stock Symbol"
+            android:inputType="textPersonName"
+            android:minHeight="48dp"
+            android:paddingLeft="10dp" />
+
+        <EditText
+            android:id="@+id/date"
+            android:layout_width="wrap_content"
+            android:maxLength="10"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/entry"
+            android:ems="10"
+            android:fontFamily="@font/alfa_slab_one"
+            android:hint="Date"
+            android:inputType="date"
+            android:minHeight="48dp"
+            android:paddingLeft="10dp" />
+
+        <EditText
+            android:id="@+id/qunt"
+            android:layout_width="wrap_content"
+            android:maxLength="5"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/entry"
+            android:ems="10"
+            android:fontFamily="@font/alfa_slab_one"
+            android:hint="Quantity"
+            android:inputType="number"
+            android:minHeight="48dp"
+            android:paddingLeft="10dp" />
+
+        <EditText
+            android:id="@+id/price"
+            android:layout_width="wrap_content"
+            android:maxLength="10"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/entry"
+            android:ems="10"
+            android:fontFamily="@font/alfa_slab_one"
+            android:hint="Avg Price"
+            android:inputType="numberDecimal"
+            android:minHeight="48dp"
+            android:paddingLeft="10dp" />
+
+        <Button
+            android:id="@+id/addbutton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="30dp"
+            android:fontFamily="@font/allerta"
+            android:text="ADD" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:fontFamily="@font/allerta"
+        android:text="To know your stock symbol you can go to https://finance.yahoo.com for correct symbol name / else you can also write your stockname in stock symbol (It will not calculate live stock price )" />
+
+</LinearLayout>
